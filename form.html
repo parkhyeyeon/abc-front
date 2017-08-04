@@ -10,22 +10,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container-fluid">
+  <nav class="navbar navbar-default" role="navigation">
+  <a href="#" class="navbar-brand">TRIP</a>
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">TRIP</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-ok"></span> 비용보기</a></li>
-	
-	<li><a href="#">menu1</a></li>
-      	<li><a href="#">menu2</a></li>
-      	<li><a href="#">menu3</a></li>
-
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">일정보기</a></li>
+        <li><a href="#">비용보기</a></li>
+        <li><a href="#">menu3</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <div class="container">
 <div class="row">
@@ -39,21 +41,21 @@
 		  <input id="inpEndDate" class="btn btn-default" style="..." type="date">
 	   </div>
 
-        
-  
-	
-      
+
+
+
+
 	<form class="form-inline">
   		<div class="form-group">
    			<label for="exampleInputName">일정표이름</label>
     			<input type="text" class="form-control" id="exampleInputName" >
   		</div>
-	
 
-  	
+
+
   		<div class="form-group"><strong>출발하는날</strong>
 
-		
+
 
     			<label class="sr-only" for="input1">년</label>
 
@@ -67,16 +69,16 @@
 
 	  			<input type="text" class="form-control" id="input3">일
 
-		 </div> 	
-	
+		 </div>
 
-	
+
+
  		 <div class="form-group"><strong>도착하는 날</strong>
 
    			 <label class="sr-only" for="input11">년</label>
 
     				 <input type="text" class="form-control" id="input11" >년
-    			  
+
    			<label class="sr-only" for="input22">월</label>
 
     				 <input type="text" class="form-control" id="input22" >월
@@ -86,14 +88,14 @@
     				 <input type="text" class="form-control" id="input33" >일
   		 </div>
 
-	
-	</form>
-	
-	
-	 <button type="button" class="btn btn-primary btn-md col-md-11" onclick="">일정표 만들기</button>
-	
 
-	
+	</form>
+
+
+	 <button type="button" class="btn btn-primary btn-md col-md-11" onclick="">일정표 만들기</button>
+
+
+
 
 
 
