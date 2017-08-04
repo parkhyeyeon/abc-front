@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <title>Form</title>
@@ -10,99 +10,67 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container-fluid">
+  <nav class="navbar navbar-default" role="navigation">
+  <a href="#" class="navbar-brand">TRIP</a>
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">TRIP</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-ok"></span> 비용보기</a></li>
-	
-	<li><a href="#">menu1</a></li>
-      	<li><a href="#">menu2</a></li>
-      	<li><a href="#">menu3</a></li>
-
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">일정보기</a></li>
+        <li><a href="#">비용보기</a></li>
+        <li><a href="#">menu3</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <div class="container">
 <div class="row">
 
-	<div class="col-md-9"> <h4><strong>새 일정표 만들기</strong></h4>
+	<div class="col-md-6"> <h4><strong>새 일정표 만들기</strong></h4>
 
-	   <div class="col-md-6">
-  	 	  <input id="inpStartDate" class="btn btn-default" style="..." type="date">
-	   </div>
- 	   <div class="col-md-6">
-		  <input id="inpEndDate" class="btn btn-default" style="..." type="date">
-	   </div>
+	 
 
-        
-  
-	
-      
-	<form class="form-inline">
+	<form class="form-group">
   		<div class="form-group">
    			<label for="exampleInputName">일정표이름</label>
     			<input type="text" class="form-control" id="exampleInputName" >
   		</div>
-	
 
-  	
+
+
   		<div class="form-group"><strong>출발하는날</strong>
 
-		
 
-    			<label class="sr-only" for="input1">년</label>
 
-   				<input type="text" class="form-control" id="input1" >년
+    			 <input id="inpStartDate" class="btn btn-default" style="..." type="date">
 
-   			<label class="sr-only" for="input2">월</label>
+		 </div>
 
-   				<input type="text" class="form-control" id="input2" >월
 
-   			<label class="sr-only" for="input3">일</label>
 
-	  			<input type="text" class="form-control" id="input3">일
-
-		 </div> 	
-	
-
-	
  		 <div class="form-group"><strong>도착하는 날</strong>
 
-   			 <label class="sr-only" for="input11">년</label>
-
-    				 <input type="text" class="form-control" id="input11" >년
-    			  
-   			<label class="sr-only" for="input22">월</label>
-
-    				 <input type="text" class="form-control" id="input22" >월
-
-    			  <label class="sr-only" for="input33">일</label>
-
-    				 <input type="text" class="form-control" id="input33" >일
+   			<input id="inpEndDate" class="btn btn-default" style="..." type="date">
   		 </div>
 
-	
-	</form>
-	
-	
-	 <button type="button" class="btn btn-primary btn-md col-md-11" onclick="">일정표 만들기</button>
-	
 
-	
+	</form>
+
 
 
 
 	</div>
 
-	<div class="col-md-3"><h4> <strong>여행가는 멤버 및 역할 </strong></h4>
+	<div class="col-md-6"><h4> <strong>여행가는 멤버 및 역할 </strong></h4>
 		<div class="row">
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="input-group">
 					<h5>멤버</h5>
 					<input type="text" class="form-control" aria-label="...">
@@ -110,26 +78,31 @@
 					<input type="text" class="form-control" aria-label="...">
 					<input type="text" class="form-control" aria-label="...">
 				</div>
+			
+			<div class="row">
+
+			  <div class="col-md-4"></div>
+			  <div class="col-md-6">
+			    <button type="button" class="btn btn-default btn-md">
+  			      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
+			  </div>
+
 			</div>
-			<div class="col-md-6">
-				<div class="input-group">
-					<h5>역할</h5>
-					<input type="text" class="form-control" aria-label="...">
-					<input type="text" class="form-control" aria-label="...">
-					<input type="text" class="form-control" aria-label="...">
-					<input type="text" class="form-control" aria-label="...">
-				</div>
-
-			<button type="button" class="btn btn-primary btn-md">
-  				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
-
+			
 			</div>
 
 		</div>
 	</div>
 
+	<div class="row">
 
+	  <div class="col-md-4"></div>
+	  <div class="col-md-8">
+     	     <button type="button" class="btn btn-primary btn-lg" onclick="">일정표 만들기</button>
+	  </div>
 
+	  </div>
+	</div>
 
 </div>
 </div>
