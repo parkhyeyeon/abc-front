@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+  <a href="#" class="navbar-brand">TRIP</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">일정보기</a></li>
+        <li><a href="#">비용보기</a></li>
+        <li><a href="#">menu3</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="dateList col-md-3">
+        <table class="table">
+          <tr>
+            <th class="text-center"> 날짜 <button type="button" class="btn btn-default pull-right">+</button></th>
+          </tr>
+          <tr>
+            <td> date</td>
+          </tr>
+        </table>
+      </div>
+      <div class=" col-md-9">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <th>돈 낸 사람</th>
+              <th>내용</th>
+              <th>금액</th>
+            </tr>
+            <tr>
+              <td class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-role="dropdown">
+                      사용자 목록<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>user</li>
+                    </ul>
+                </td>
+                <td>content</td>
+                <td>amount</td>
+                <td>number</td>
+                <td>sum</td>
+            </tr>
+            <tr>
+              <td class="dropdown">
+                    <a class="dropdown-toggle" data-role="dropdown">
+                      사용자 목록<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>user</li>
+                    </ul>
+                </td>
+                <td>content</td>
+                <td>amount</td>
+                <td>number</td>
+                <td>sum</td>
+            </tr>
+            <tr>
+          </table>
+        </div>
+          <div>
+            <h1>오늘의 총합 : TotalToday 원</h1>
+            <button class="btn btn-primary btn-lg col-md-9" onclick="">
+              돈나누기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
